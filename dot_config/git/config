@@ -1,0 +1,7 @@
+# Shared git settings. ~/.gitconfig holds the identity and overrides this file.
+[push]
+	autoSetupRemote = true
+[credential]
+	helper = store
+[init]
+	defaultBranch = main
