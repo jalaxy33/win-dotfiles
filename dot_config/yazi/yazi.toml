@@ -1,0 +1,17 @@
+# ~/.config/yazi/yazi.toml
+
+[mgr]
+show_hidden = true
+sort_by = "natural"
+
+[opener]
+edit = [
+  { run = '%EDITOR% %s', desc = "$EDITOR", block = true, for = "windows" },
+]
+
+[open]
+prepend_rules = [
+  { url = "*.toml", use = ["edit"] }, 
+  { url = "*.list", use = ["edit"] }, 
+]
+
